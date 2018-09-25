@@ -2,6 +2,7 @@
 int ballX, ballStartX;
 int ballY, ballStartY;
 int ballDiameter;
+int score [] = new int [2];
 float ballMoveX = 1.0;
 float ballMoveY = 1.0;
 
@@ -11,7 +12,7 @@ void setup() {
   ballX = ballStartX;
   ballStartY = height/2;
   ballY = ballStartY;
-  ballDiameter = width/40;
+  ballDiameter = width/30;
 }
 
 void draw() {
@@ -29,6 +30,17 @@ void draw() {
   }
   if  (ballY <= height && ballY >= 0){
     ballY += ballMoveY;
+}
+
+//this here be the score stuff
+
+if (ballX == 0) {
+score[1] += 1;
+println ("Score Board is: " + score[0] + " Player 1" + "    " + score[1] + " Player 2");
+}
+if (ballX == width) {
+score[0] += 1;
+println ("Score Board is: " + score[0] + " Player 1" + "    " + score[1] + " Player 2");
 }
  
   //ellipse(250, 250, 25, 25);
