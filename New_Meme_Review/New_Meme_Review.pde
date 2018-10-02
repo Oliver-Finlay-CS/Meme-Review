@@ -12,7 +12,7 @@ void setup() {
   ballX = ballStartX;
   ballStartY = height/2;
   ballY = ballStartY;
-  ballDiameter = width/9;
+  ballDiameter = width/1;
 }
 
 void draw() {
