@@ -17,20 +17,23 @@ void setup() {
 
 void draw() {
   background(#070000);
-  if (ballX ==width | ballX == 0 | ballY == height | ballY == 0) {
-    if (ballX == width | ballX == 0) {
+  ballX += ballMoveX;
+  ballY += ballMoveY;
+  
+    if (ballX == width || ballX == 0) {
       ballMoveX = ballMoveY * (-1);
     }
-    if (ballY == height - ballDiameter/2 | ballY == 0 + ballDiameter/2) {
+    if (ballY == height || ballY == 0) {
       ballMoveY = ballMoveY * (-1);
     }
-  }
-  if (ballX <= width && ballX >= 0) { 
-    ballX += ballMoveY;
-  }
-  if  (ballY <= height && ballY >= 0){
-    ballY += ballMoveY;
-}
+  
+  //if (ballX <= width && ballX >= 0) { 
+    //ballX += ballMoveY;
+  //}
+ //if  (ballY <= height && ballY >= 0){
+   // ballY += ballMoveY;
+//}
+//Above stuff commented makes the ball go all the way to 70k 70k
 
 //this here be the score stuff
 
