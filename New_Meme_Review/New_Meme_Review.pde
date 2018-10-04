@@ -21,16 +21,16 @@ void draw() {
   ballY += ballMoveY;
   
     if (ballX == width || ballX == 0) {
-      ballMoveX = ballMoveY * (-1);
+      ballMoveX = ballMoveX * (-1);
     }
     if (ballY == height || ballY == 0) {
-      ballMoveY = ballMoveY * (-1);
+      ballMoveY = ballMoveY * (-2);
     }
   
-  //if (ballX <= width && ballX >= 0) { 
-    //ballX += ballMoveY;
-  //}
- //if  (ballY <= height && ballY >= 0){
+  //if (ballX <= width && ballX >= 1) { 
+   //ballX += ballMoveY;
+ // }
+ //if  (ballY <= height && ballY >= 1){
    // ballY += ballMoveY;
 //}
 //Above stuff commented makes the ball go all the way to 70k 70k
