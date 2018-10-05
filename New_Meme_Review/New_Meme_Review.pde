@@ -4,7 +4,7 @@ int ballY, ballStartY;
 int ballDiameter;
 int score [] = new int [2];
 float ballMoveX = 1.0;
-float ballMoveY = 1.0;
+float ballMoveY = 2.0;
 
 void setup() {
   size(500, 500);
@@ -24,7 +24,7 @@ void draw() {
       ballMoveX = ballMoveX * (-1);
     }
     if (ballY == height || ballY == 0) {
-      ballMoveY = ballMoveY * (-2);
+      ballMoveY = ballMoveY * (-1);
     }
   
   //if (ballX <= width && ballX >= 1) { 
